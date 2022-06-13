@@ -1,0 +1,120 @@
+/**https://coolors.co/c9f0ff-eafffd-efeff0-d5cad6-6b5e62**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EAFFFD ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+/**Header**/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    background-color: #C9F0FF;
+    border-bottom: 1px solid #D5CAD6;
+}
+.header__logoImg{
+    width: 30%;
+    min-width: 200px;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+.nav__item{
+    border: 1px solid #02446A;
+    padding: 10px;
+}
+.nav__item:hover{
+    background-color: #EAFFFD ;
+}
+.nav__link{
+    padding: 10px;
+    text-decoration: none;
+    color: #02446A;
+    font-weight:bold;
+    
+}
+
+/**Main**/
+.main{
+    text-align: center;
+    padding: 0 10%;
+
+}
+.title{
+    font-family: 'Bebas Neue', cursive;
+    margin: 20px 0;
+    font-size: 60px;
+    color: #02446A;
+}
+
+.us__title, .products__title{
+    font-family: 'Bebas Neue', cursive;
+    margin: 20px 0;
+    font-size: 30px;
+    color: #02446A;
+}
+.products__gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.products__images{
+    margin: 10px;
+    max-width: 100%;
+}
+.products__images:hover{
+    border: 1px solid #02446A;
+}
+/**footer**/
+.footer{
+    text-align: center;
+    background-color: #4E8098;
+    margin-top: 50px;
+    padding: 100px 0px;
+}
+.footer__container{
+    padding: 10px;
+    margin: 10px;
+}
+.footer__socialNetworks{
+    max-width: 30px;
+}
+.footer__text{
+    color: white;
+}
+
+
+/*Mediqueries xs sm*/
+@media  (max-width: 767px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logoLink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav{
+        width: 90%;
+    }
+    .nav__list{
+        flex-direction: column;
+        background-color: aqua;
+    }
+    .nav__item{
+        text-align: center;
+    }
+    
+    
+}
